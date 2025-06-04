@@ -13,7 +13,6 @@ public class Vehicle {
     private int currentSpeed;
     private int currentDirection;
 
-    // Full constructor
     public Vehicle(String name, int doors, int gears, int wheels, boolean isManual, String type, int seats) {
         this.name = name;
         this.doors = doors;
@@ -28,10 +27,9 @@ public class Vehicle {
     }
 
     public Vehicle(String name) {
-        this(name, 4, 6, 4, true, "DefaultType", 5);  // default values you can customize
+        this(name, 4, 5, 4, true, "Sedan", 5); // standard default values
     }
 
-    // Getters for all fields needed by tests or Car
     public String getName() {
         return name;
     }
@@ -72,13 +70,8 @@ public class Vehicle {
         return currentDirection;
     }
 
-    // Methods for changing state
     public void changeGear(int gear) {
         this.currentGear = gear;
-    }
-
-    public void stop() {
-        this.currentSpeed = 0;
     }
 
     public void changeSpeed(int speed, int direction) {
@@ -86,12 +79,15 @@ public class Vehicle {
         this.currentDirection = direction;
     }
 
-    public void move(int speed, int direction) {
-        changeSpeed(speed, direction);
-    }
-
     public void steer(int direction) {
         this.currentDirection = direction;
     }
 
+    public void move(int speed, int direction) {
+        changeSpeed(speed, direction);
+    }
+
+    public void stop() {
+        this.currentSpeed = 0;
+    }
 }
