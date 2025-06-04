@@ -90,4 +90,11 @@ public class Vehicle {
     public void stop() {
         this.currentSpeed = 0;
     }
+
+    @Override
+    public String toString() {
+        return "Vehicle{name='" + name + "', doors=" + doors + ", gears=" + gears +
+                ", wheels=" + wheels + ", isManual=" + isManual + ", type='" + type + "', seats=" + seats + "}";
+    }
+
 }

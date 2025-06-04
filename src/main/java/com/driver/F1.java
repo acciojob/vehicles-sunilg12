@@ -44,4 +44,10 @@ public class F1 extends Vehicle {
         super.stop();
         System.out.println("F1 car stopped");
     }
+
+    @Override
+    public String toString() {
+        return "F1{name='" + getName() + "', speed=" + getCurrentSpeed() + ", gear=" + getCurrentGear() + "}";
+    }
+
 }
