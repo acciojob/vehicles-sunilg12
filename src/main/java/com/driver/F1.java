@@ -3,7 +3,7 @@ package com.driver;
 public class F1 extends Vehicle{
     public F1() {
         // Default constructor - call super with some defaults or empty
-        super("DefaultF1", 0, 0, 4, false, "F1", 1);
+        super("DefaultF1", 1, 0, 4, false, "F1", 1);
     }
 
     // Constructor matching your test cases:
