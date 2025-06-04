@@ -27,6 +27,10 @@ public class Vehicle {
         this.currentDirection = 0;
     }
 
+    public Vehicle(String name) {
+        this(name, 4, 6, 4, true, "DefaultType", 5);  // default values you can customize
+    }
+
     // Getters for all fields needed by tests or Car
     public String getName() {
         return name;

@@ -3,6 +3,11 @@ package com.driver;
 public class Main {
     public static void main(String[] args) {
 
+        Vehicle vehicle = new Vehicle("SomeName");
+
+        System.out.println("Vehicle name: " + vehicle.getName());
+        System.out.println("Vehicle doors: " + vehicle.getDoors());
+
         Car ford = new Car("Ford Mustang", 4, 2, 6, true, "Sedan", 5);
 
         // Add these methods in Car class or remove these calls
