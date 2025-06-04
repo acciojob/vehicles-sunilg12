@@ -34,4 +34,12 @@ public class F1 extends Vehicle{
 
         changeSpeed(newSpeed, getCurrentDirection()); // update speed & keep direction same
     }
+
+    public void start() {
+        System.out.println("F1 car started");
+    }
+
+    public void boost() {
+        System.out.println("F1 car is boosting");
+    }
 }
